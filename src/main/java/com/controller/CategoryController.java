@@ -22,6 +22,6 @@ public class CategoryController {
 	@Operation(summary = "list all the available categories")
 	public List<Category> listofcat() {
 		return categoryRepo.findAll();
-     
+
 	}
 }
