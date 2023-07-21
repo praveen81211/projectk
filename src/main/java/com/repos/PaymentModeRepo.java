@@ -14,7 +14,9 @@ public interface PaymentModeRepo extends JpaRepository<PaymentMode, String> {
 	List<String> listPayModesOfUser(@Param("username") String username);
 
 
-   @Query(value="select user_name from Paymentmode WHERE remarks=:remarks",nativeQuery=true)
-   List<String> listusername(@Param("remarks") String remarks);
+       @Query(value="select user_name from Paymentmode WHERE remarks=:remarks",nativeQuery=true)
+       List<String> listusername(@Param("remarks") String remarks);
+
+	
 }   
    
